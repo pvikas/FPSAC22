@@ -36,6 +36,7 @@
     offset: 75
   });
 
+/*
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
@@ -48,6 +49,15 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+*/
+
+    var collapseDropdown = function() {
+      var scroll = $(window).scrollTop();
+        if(scroll > 200){
+            $("div.dropdown-menu").removeClass("show");
+        }
+    };
+    $(window).scroll(collapseDropdown);
 
   // Magnific popup calls
   $('#portfolio').magnificPopup({
