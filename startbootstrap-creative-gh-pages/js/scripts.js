@@ -36,21 +36,6 @@
     offset: 75
   });
 
-/*
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-scrolled");
-    } else {
-      $("#mainNav").removeClass("navbar-scrolled");
-    }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
-*/
-
     var collapseDropdown = function() {
       var scroll = $(window).scrollTop();
         if(scroll > 200){
@@ -73,6 +58,11 @@
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
+  });
+	
+   // For positioning submenu correctly on click
+  $("a.dropdown-item").click(function() {
+    $(".navbar-collapse").collapse("hide");
   });
 
 })(jQuery); // End of use strict
