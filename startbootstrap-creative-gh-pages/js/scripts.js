@@ -59,8 +59,8 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-	
-   // For positioning submenu correctly on click
+
+  // For positioning submenu correctly on click
   $("a.dropdown-item").click(function() {
     $(".navbar-collapse").collapse("hide");
   });
